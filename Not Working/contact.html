@@ -55,9 +55,10 @@
   <link rel="alternate" hreflang="zh" href="https://www.wealthtreksoftware.com/contact.aspx?language=zh" />
   <link rel="alternate" hreflang="x-default" href="https://www.wealthtreksoftware.com/contact.aspx" />
 
+  <!-- jquery and validate js -->
   <script src="js/jquery.min.js"></script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
 </head>
 
 <body>
@@ -146,7 +147,7 @@
     }
 
     .error {
-      color: red !important;
+      color: red;
       display: block;
     }
 
@@ -278,7 +279,7 @@
 
                 <div class="form-outline col-md-6 mb-3">
                   <span id="lblHumanCheck" class="form-label"><span>*</span> Human Check: How much is 2+2?</span>
-                  <input name="humanCheck" type="text" id="txtHumanCheck" class="form-control" />
+                  <input name="ctl00$ContentBody$txtHumanCheck" type="text" id="txtHumanCheck" class="form-control" />
                   <div class="valid-feedback">
                     Looks good!
                   </div>
@@ -629,7 +630,8 @@
   <!-- Optional JavaScript; choose one of the two! -->
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="js/bootstrap.bundle.min.js"></script>
-
+  <!-- jquery is moved to header -->
+  <!-- <script src="js/jquery.min.js"></script> -->
   <script src="myjs/myscripts.min.js"></script>
   <!-- general script file -->
   <script src="js/owl.carousel.js"></script>
